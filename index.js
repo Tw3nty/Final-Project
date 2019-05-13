@@ -20,5 +20,8 @@ app.get('/login', ControllerPages.login)
 app.get('/signup', ControllerPages.signup)
 app.get('/', ControllerPages.home)
 app.get('/addmerch', ControllerPosts.addmerch)
+app.get('/tees', ControllerPages.tees)
+app.get('/hoodies', ControllerPages.hoodies)
+app.get('/accessories', ControllerPages.accessories)
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))

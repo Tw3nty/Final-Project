@@ -11,3 +11,15 @@ exports.signup = function (req, res){
 exports.home = function (req, res) {
   res.render('home', {title:'home'})
 }
+
+exports.tees = function (req, res) {
+  res.render('tees', {title:'tees'})
+}
+
+exports.hoodies = function (req, res) {
+  res.render('hoodies', {title:'hoodies'})
+}
+
+exports.accessories = function (req, res) {
+  res.render('accessories', {title:'accessories'})
+}
