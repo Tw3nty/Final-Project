@@ -1,0 +1,145 @@
+
+
+h1 {
+  color: black;
+  text-align: center;
+  background-color: white;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+colorstrip{
+    width: 100%; height: 2px;
+    border-style: solid;
+    border-color: black;
+    background-color: green;
+}
+
+main {
+  display: flex;
+  display: flex;
+  margin-bottom: 10px;
+  border-radius: 25px;
+  padding: 20px;
+  border: 5px solid white;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 7%;
+  background-color: white;
+  height: 100%; /* Full height */
+  position: fixed; /* Make it stick, even on scroll */
+  overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
+
+a {
+  display: block;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a.active {
+  background-color: #4CAF50;
+  color: black;
+}
+
+a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+iframe{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main {
+  display: flex;
+  display: flex;
+  margin-bottom: 10px;
+  border-radius: 25px;
+  padding: 20px;
+  border: 5px solid white;
+  background-color: white;
+}
+
+body{
+  background-image: url("https://serfob.s3.amazonaws.com/media/images/Deep_Space.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer {
+   bottom: 0;
+   width: 80%;
+   background-color: white;
+   text-align: center;
+   margin-right: auto;
+   margin-left: auto;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#negButton {
+    display: inLine;
+    height: 40px;
+    color: black;
+    font-size: 25px;
+    text-decoration: none;
+    line-height: 36px;
+    box-sizing: border-box;
+    padding: 1px 0 0 0;
+    text-align: center;
+    background-color: black;
+    border-radius: 4px;
+    margin-top: 30px;
+    width: 50;
+}
+
+#upButton {
+    display: inLine;
+    height: 40px;
+    color: black;
+    font-size: 25px;
+    text-decoration: none;
+    line-height: 36px;
+    box-sizing: border-box;
+    padding: 1px 0 0 0;
+    text-align: center;
+    background-color: black;
+    border-radius: 4px;
+    margin-top: 30px;
+    width: 50;
+}

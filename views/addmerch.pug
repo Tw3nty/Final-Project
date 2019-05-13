@@ -1,0 +1,14 @@
+extends layout.pug
+block content
+  h1 Admin Control Panel
+  main
+      div
+        input.form-control(type='text', placeholder='Amazing Hoodie')
+        select.form-control
+          option Tees
+          option Hoodies
+          option Accessories
+        input.form-control(type='text', placeholder='Url')
+        label(for='exampleFormControlTextarea1') Description
+        textarea#exampleFormControlTextarea1.form-control(rows='3')
+        input.form-control(type='text', placeholder='$0.00')

@@ -1,0 +1,18 @@
+div
+  ul
+    li
+      a(href='/') Home
+    li
+      li.nav-item.dropdown
+        a.nav-link.dropdown-toggle(data-toggle='dropdown', href='/get-posts', role='button', aria-haspopup='true', aria-expanded='false') Merch
+        .dropdown-menu
+          a.dropdown-item(href='#') Tees
+          a.dropdown-item(href='#') Hoodies
+          a.dropdown-item(href='#') Accessories
+          .dropdown-divider
+          a.dropdown-item(href='/addmerch') Add Merch(Admin)
+
+    li
+      a(href='/login') Login
+    li
+      a(href='/signup') Signup
