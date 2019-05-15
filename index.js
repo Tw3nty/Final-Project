@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const port = 3000
+var mongoose = require('mongoose');
 var bodyParser = require('body-parser')
 const bcrypt = require('bcrypt');
 
