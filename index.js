@@ -83,14 +83,24 @@ function isLoggedIn(req, res, next){
   next()
 }
 
+function isAdmin(req, res, next){
+  console.log(req.user)
+  if(req.user.uname !== 'Logan'){
+    res.redirect('/adminfail')
+    return
+  }
+  next()
+}
+
 //routes
 app.get('/login', ControllerPages.login)
 app.get('/signup', ControllerPages.signup)
 app.get('/', ControllerPages.home)
-app.get('/addmerch', ControllerPages.addmerch)
+app.get('/addmerch', isAdmin, ControllerPages.addmerch)
 app.get('/tees', isLoggedIn, ControllerPosts.tees)
 app.get('/hoodies', isLoggedIn, ControllerPosts.hoodies)
 app.get('/accessories', isLoggedIn, ControllerPosts.accessories)
+app.get('/adminfail', ControllerPages.adminfail)
 app.post('/signup', ControllerUsers.signedin)
 app.post('/added-merch', ControllerPosts.addedmerch)
 

@@ -15,3 +15,7 @@ exports.home = function (req, res) {
 exports.addmerch = function (req, res) {
     res.render('addmerch', {title:'Add Merch'})
 }
+
+exports.adminfail = function (req, res) {
+    res.render('adminfail', {title:'Admin Fail'})
+}
