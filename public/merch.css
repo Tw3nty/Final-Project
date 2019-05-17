@@ -158,3 +158,11 @@ button:hover {
   width: 14rem;
   height: auto;
 }
+
+#left {
+  right: 20px;
+}
+
+#center {
+  align-items: center;
+}
