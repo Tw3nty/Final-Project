@@ -15,7 +15,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 //models
-var Post = require('./models/merchSchema.js')
+var Merch = require('./models/merchSchema.js')
 var User = require('./models/User.js')
 
 app.set('view engine', 'pug')
@@ -92,6 +92,6 @@ app.get('/tees', isLoggedIn, ControllerPosts.tees)
 app.get('/hoodies', isLoggedIn, ControllerPosts.hoodies)
 app.get('/accessories', isLoggedIn, ControllerPosts.accessories)
 app.post('/signup', ControllerUsers.signedin)
-app.post('added-merch', ControllerPages.post)
+app.post('/added-merch', ControllerPosts.addedmerch)
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))

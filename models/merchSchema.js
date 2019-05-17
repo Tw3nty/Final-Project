@@ -8,5 +8,5 @@ var Schema = mongoose.Schema;
     description: {type:String, required:true},
     cost: {type:String, required:true},
   });
-var Post = mongoose.model('Post', merchSchema)
-module.exports = Post;
+var Merch = mongoose.model('Merch', merchSchema)
+module.exports = Merch;

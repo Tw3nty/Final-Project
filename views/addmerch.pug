@@ -4,13 +4,17 @@ block content
   main
       div
         form(action='/added-merch' method='POST')
-          input.form-control(type='text', placeholder='Amazing Hoodie')
-          select.form-control
+          label(for='title') Title
+          input.form-control(type='text', placeholder='Amazing Hoodie', , name='title')
+          label(for='type') Type
+          select.form-control(name='type')
             option Tees
             option Hoodies
             option Accessories
-          input.form-control(type='text', placeholder='Url')
-          label(for='exampleFormControlTextarea1') Description
-          textarea#exampleFormControlTextarea1.form-control(rows='3')
-          input.form-control(type='text', placeholder='$0.00')
+          label(for='merch') Url
+          input.form-control(type='text', placeholder='Url', name='merch')
+          label(for='description') Description
+          textarea#exampleFormControlTextarea1.form-control(rows='3', name='description')
+          label(for='cost') Cost
+          input.form-control(type='text', placeholder='$0.00', name='cost')
           button(type='submit') Submit
