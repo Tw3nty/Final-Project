@@ -159,10 +159,12 @@ button:hover {
   height: auto;
 }
 
-#left {
-  right: 20px;
+#right {
+  position: absolute;
+  right: 350px;
+
 }
 
 #center {
-  align-items: center;
+  text-align: center;
 }
