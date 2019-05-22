@@ -2,15 +2,14 @@ extends layout.pug
 block content
   h1 Tees
   main
-    div
-      each e in merch1
-        if e.type == 'Tees'
-          .card(style='width: 18rem;')
-            img.resize(src= e.merch)
-            .card-body
-              h5.card-title #{e.title}
-              p.card-text
-                | #{e.description}
-              p.card-text 
-                | #{e.cost}
-              a.btn.btn-primary(href='#') Add to Cart
+    each e in merch1
+      if e.type == 'Tees'
+        .card(style='width: 18rem;')
+          img.resize(src= e.merch)
+          .card-body
+            h5.card-title #{e.title}
+            p.card-text
+              | #{e.description}
+            p.card-text 
+              | #{e.cost}
+            a.btn.btn-primary(href='#') Add to Cart

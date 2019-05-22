@@ -86,7 +86,7 @@ function isLoggedIn(req, res, next){
 function isAdmin(req, res, next){
   console.log(req.user)
   if(req.user !== undefined){
-    if(req.user.uname !== 'Logan'){
+    if(req.user.uname !== 'Tw3nty'){
       res.redirect('/adminfail')
       return
     }
